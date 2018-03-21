@@ -2,6 +2,13 @@
 Lokalise command line tool (https://docs.lokalise.co/article/44l4f1hiZM-lokalise-cli-tool) in Docker container. Use it to import/export data with Lokalise (https://lokalise.co).
 https://hub.docker.com/r/lokalise/lokalise-cli/
 
+### Using with bitbucket pipelines
+    - step:
+        name: Lokalise
+        image: meffulka/lokalise-cli
+        script:
+          - lokalise ...
+
 ### Export from Lokalise to local directory
     API_TOKEN=<your api token>
     PROJECT_ID=<project id>
