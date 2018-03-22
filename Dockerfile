@@ -2,7 +2,7 @@ FROM alpine:3.7
 
 LABEL maintainer="Alekseii Erokhin <zmeffulka@gmail.com>"
 
-RUN apk add --no-cache git coreutils
+RUN apk add --no-cache git coreutils ssh
 
 COPY lokalise /usr/local/bin/
 
